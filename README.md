@@ -1,2 +1,2 @@
-#Fun With React Native
-Contains practice projects with React Native.
+#Fun with React Native
+Contains practice projects on React Native.
