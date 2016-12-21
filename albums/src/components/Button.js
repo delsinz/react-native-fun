@@ -1,3 +1,9 @@
+/**
+ * Author: Delsin
+ * Created: 12/20/2016
+ * Last modified: 12/20/2016
+ */
+
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
