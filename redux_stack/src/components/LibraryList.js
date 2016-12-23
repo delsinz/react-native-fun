@@ -9,12 +9,12 @@ class LibraryList extends Component {
         const ds = new ListView.DataSource({
             rowHasChanged: (r1, r2) => r1 !== r2
         });
-        this.dataSource = ds.cloneWithRows(this.props.libraries);
+        this.dataSource = ds.cloneWithRows(this.props.items);
     }
 
-    renderRow(library) {
+    renderRow(item) {
         return (
-            <ListItem library={library} />
+            <ListItem item={item} />
         );
     }
 
@@ -29,7 +29,7 @@ class LibraryList extends Component {
 }
 
 const mapStateToProps = (state) => {
-    return { libraries: state.libraries };
+    return { items: state.items };
 };
 
 export default connect(mapStateToProps)(LibraryList);
